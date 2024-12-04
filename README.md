@@ -40,3 +40,26 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 ```
+
+### Install `prettier`
+```bash
+npm install --save-dev --save-exact prettier
+```
+
+### Add prettier configuration to `.prettierrc.json` file
+
+```json
+{
+    "semi": true,
+    "tabWidth": 4,
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "none"
+}
+```
+
+### Add script to `package.json` to format all files using above configs
+
+```json
+"format": "prettier --write ."
+```
